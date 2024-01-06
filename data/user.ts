@@ -8,7 +8,7 @@ export const getUserByEmail = async (email: string) => {
 
     return user;
   } catch (error) {
-    return { message: "User not found" };
+    return null;
   }
 };
 
@@ -20,6 +20,6 @@ export const getUserById = async (id: string) => {
 
     return user;
   } catch (error) {
-    return { message: "User not found" };
+    return null;
   }
 };
